@@ -1,0 +1,16 @@
+{
+  "name": "redis-bluebird",
+  "author": "Kei Son <hey.calmdown@gmail.com>",
+  "version": "1.0.0",
+  "description": "bluebird interface on top of node_redis",
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "bluebird": "",
+    "redis": ""
+  }
+}
