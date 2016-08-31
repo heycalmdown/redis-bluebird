@@ -2,9 +2,6 @@
   "name": "redis-bluebird",
   "main": "index.d.ts",
   "version": "1.0.0",
-  "dependencies": {
-    "redis": "registry:npm/redis#0.12.1+20160729031738"
-  },
   "globalDependencies": {
     "bluebird": "registry:dt/bluebird#3.0.0+20160811111256",
     "node": "registry:env/node#6.0.0+20160825160117"
