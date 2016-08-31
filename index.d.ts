@@ -228,7 +228,7 @@ declare namespace redis {
         sdiffstoreAsync(...args:any[]): Promise<string>
         smembers(args:any[], callback?:redis.ResCallbackT<any>): boolean;
         smembers(...args:any[]): boolean;
-        smembersAsync(...args:any[]): Promise<string>
+        smembersAsync(...args:any[]): Promise<string[]>
         zadd(args:any[], callback?:redis.ResCallbackT<any>): boolean;
         zadd(...args:any[]): boolean;
         zaddAsync(...args:any[]): Promise<string>
