@@ -91,401 +91,401 @@ declare namespace redis {
 
         get(args: any[], callback?: redis.ResCallbackT<string>): boolean;
         get(...args: any[]): boolean;
-        getAsync(...args: any[]): Promise<string>
+        getAsync<T>(...args: any[]): Promise<T>
         set(args: any[], callback?: redis.ResCallbackT<string>): boolean;
         set(...args: any[]): boolean;
-        setAsync(...args: any[]): Promise<string>
+        setAsync<T>(...args: any[]): Promise<T>
         setnx(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         setnx(...args: any[]): boolean;
-        setnxAsync(...args: any[]): Promise<string>
+        setnxAsync<T>(...args: any[]): Promise<T>
         setex(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         setex(...args: any[]): boolean;
-        setexAsync(...args: any[]): Promise<string>
+        setexAsync<T>(...args: any[]): Promise<T>
         append(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         append(...args: any[]): boolean;
-        appendAsync(...args: any[]): Promise<string>
+        appendAsync<T>(...args: any[]): Promise<T>
         strlen(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         strlen(...args: any[]): boolean;
-        strlenAsync(...args: any[]): Promise<string>
+        strlenAsync<T>(...args: any[]): Promise<T>
         del(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         del(...args: any[]): boolean;
-        delAsync(...args: any[]): Promise<string>
+        delAsync<T>(...args: any[]): Promise<T>
         exists(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         exists(...args: any[]): boolean;
-        existsAsync(...args: any[]): Promise<string>
+        existsAsync<T>(...args: any[]): Promise<T>
         setbit(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         setbit(...args: any[]): boolean;
-        setbitAsync(...args: any[]): Promise<string>
+        setbitAsync<T>(...args: any[]): Promise<T>
         getbit(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         getbit(...args: any[]): boolean;
-        getbitAsync(...args: any[]): Promise<string>
+        getbitAsync<T>(...args: any[]): Promise<T>
         setrange(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         setrange(...args: any[]): boolean;
-        setrangeAsync(...args: any[]): Promise<string>
+        setrangeAsync<T>(...args: any[]): Promise<T>
         getrange(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         getrange(...args: any[]): boolean;
-        getrangeAsync(...args: any[]): Promise<string>
+        getrangeAsync<T>(...args: any[]): Promise<T>
         substr(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         substr(...args: any[]): boolean;
-        substrAsync(...args: any[]): Promise<string>
+        substrAsync<T>(...args: any[]): Promise<T>
         incr(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         incr(...args: any[]): boolean;
-        incrAsync(...args: any[]): Promise<string>
+        incrAsync<T>(...args: any[]): Promise<T>
         decr(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         decr(...args: any[]): boolean;
-        decrAsync(...args: any[]): Promise<string>
+        decrAsync<T>(...args: any[]): Promise<T>
         mget(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         mget(...args: any[]): boolean;
-        mgetAsync(...args: any[]): Promise<string>
+        mgetAsync<T>(...args: any[]): Promise<T>
         rpush(...args: any[]): boolean;
-        rpushAsync(...args: any[]): Promise<string>
+        rpushAsync<T>(...args: any[]): Promise<T>
         lpush(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         lpush(...args: any[]): boolean;
-        lpushAsync(...args: any[]): Promise<string>
+        lpushAsync<T>(...args: any[]): Promise<T>
         rpushx(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         rpushx(...args: any[]): boolean;
-        rpushxAsync(...args: any[]): Promise<string>
+        rpushxAsync<T>(...args: any[]): Promise<T>
         lpushx(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         lpushx(...args: any[]): boolean;
-        lpushxAsync(...args: any[]): Promise<string>
+        lpushxAsync<T>(...args: any[]): Promise<T>
         linsert(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         linsert(...args: any[]): boolean;
-        linsertAsync(...args: any[]): Promise<string>
+        linsertAsync<T>(...args: any[]): Promise<T>
         rpop(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         rpop(...args: any[]): boolean;
-        rpopAsync(...args: any[]): Promise<string>
+        rpopAsync<T>(...args: any[]): Promise<T>
         lpop(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         lpop(...args: any[]): boolean;
-        lpopAsync(...args: any[]): Promise<string>
+        lpopAsync<T>(...args: any[]): Promise<T>
         brpop(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         brpop(...args: any[]): boolean;
-        brpopAsync(...args: any[]): Promise<string>
+        brpopAsync<T>(...args: any[]): Promise<T>
         brpoplpush(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         brpoplpush(...args: any[]): boolean;
-        brpoplpushAsync(...args: any[]): Promise<string>
+        brpoplpushAsync<T>(...args: any[]): Promise<T>
         blpop(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         blpop(...args: any[]): boolean;
-        blpopAsync(...args: any[]): Promise<string>
+        blpopAsync<T>(...args: any[]): Promise<T>
         llen(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         llen(...args: any[]): boolean;
-        llenAsync(...args: any[]): Promise<string>
+        llenAsync<T>(...args: any[]): Promise<T>
         lindex(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         lindex(...args: any[]): boolean;
-        lindexAsync(...args: any[]): Promise<string>
+        lindexAsync<T>(...args: any[]): Promise<T>
         lset(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         lset(...args: any[]): boolean;
-        lsetAsync(...args: any[]): Promise<string>
+        lsetAsync<T>(...args: any[]): Promise<T>
         lrange(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         lrange(...args: any[]): boolean;
-        lrangeAsync(...args: any[]): Promise<string>
+        lrangeAsync<T>(...args: any[]): Promise<T>
         ltrim(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         ltrim(...args: any[]): boolean;
-        ltrimAsync(...args: any[]): Promise<string>
+        ltrimAsync<T>(...args: any[]): Promise<T>
         lrem(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         lrem(...args: any[]): boolean;
-        lremAsync(...args: any[]): Promise<string>
+        lremAsync<T>(...args: any[]): Promise<T>
         rpoplpush(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         rpoplpush(...args: any[]): boolean;
-        rpoplpushAsync(...args: any[]): Promise<string>
+        rpoplpushAsync<T>(...args: any[]): Promise<T>
         sadd(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         sadd(...args: any[]): boolean;
-        saddAsync(...args: any[]): Promise<string>
+        saddAsync<T>(...args: any[]): Promise<T>
         srem(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         srem(...args: any[]): boolean;
-        sremAsync(...args: any[]): Promise<string>
+        sremAsync<T>(...args: any[]): Promise<T>
         smove(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         smove(...args: any[]): boolean;
-        smoveAsync(...args: any[]): Promise<string>
+        smoveAsync<T>(...args: any[]): Promise<T>
         sismember(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         sismember(...args: any[]): boolean;
-        sismemberAsync(...args: any[]): Promise<string>
+        sismemberAsync<T>(...args: any[]): Promise<T>
         scard(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         scard(...args: any[]): boolean;
-        scardAsync(...args: any[]): Promise<string>
+        scardAsync<T>(...args: any[]): Promise<T>
         spop(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         spop(...args: any[]): boolean;
-        spopAsync(...args: any[]): Promise<string>
+        spopAsync<T>(...args: any[]): Promise<T>
         srandmember(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         srandmember(...args: any[]): boolean;
-        srandmemberAsync(...args: any[]): Promise<string>
+        srandmemberAsync<T>(...args: any[]): Promise<T>
         sinter(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         sinter(...args: any[]): boolean;
-        sinterAsync(...args: any[]): Promise<string>
+        sinterAsync<T>(...args: any[]): Promise<T>
         sinterstore(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         sinterstore(...args: any[]): boolean;
-        sinterstoreAsync(...args: any[]): Promise<string>
+        sinterstoreAsync<T>(...args: any[]): Promise<T>
         sunion(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         sunion(...args: any[]): boolean;
-        sunionAsync(...args: any[]): Promise<string>
+        sunionAsync<T>(...args: any[]): Promise<T>
         sunionstore(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         sunionstore(...args: any[]): boolean;
-        sunionstoreAsync(...args: any[]): Promise<string>
+        sunionstoreAsync<T>(...args: any[]): Promise<T>
         sdiff(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         sdiff(...args: any[]): boolean;
-        sdiffAsync(...args: any[]): Promise<string>
+        sdiffAsync<T>(...args: any[]): Promise<T>
         sdiffstore(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         sdiffstore(...args: any[]): boolean;
-        sdiffstoreAsync(...args: any[]): Promise<string>
+        sdiffstoreAsync<T>(...args: any[]): Promise<T>
         smembers(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         smembers(...args: any[]): boolean;
-        smembersAsync(...args: any[]): Promise<string[]>
+        smembersAsync<T>(...args: any[]): Promise<string[]>
         zadd(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         zadd(...args: any[]): boolean;
-        zaddAsync(...args: any[]): Promise<string>
+        zaddAsync<T>(...args: any[]): Promise<T>
         zincrby(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         zincrby(...args: any[]): boolean;
-        zincrbyAsync(...args: any[]): Promise<string>
+        zincrbyAsync<T>(...args: any[]): Promise<T>
         zrem(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         zrem(...args: any[]): boolean;
-        zremAsync(...args: any[]): Promise<string>
+        zremAsync<T>(...args: any[]): Promise<T>
         zremrangebyscore(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         zremrangebyscore(...args: any[]): boolean;
-        zremrangebyscoreAsync(...args: any[]): Promise<string>
+        zremrangebyscoreAsync<T>(...args: any[]): Promise<T>
         zremrangebyrank(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         zremrangebyrank(...args: any[]): boolean;
-        zremrangebyrankAsync(...args: any[]): Promise<string>
+        zremrangebyrankAsync<T>(...args: any[]): Promise<T>
         zunionstore(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         zunionstore(...args: any[]): boolean;
-        zunionstoreAsync(...args: any[]): Promise<string>
+        zunionstoreAsync<T>(...args: any[]): Promise<T>
         zinterstore(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         zinterstore(...args: any[]): boolean;
-        zinterstoreAsync(...args: any[]): Promise<string>
+        zinterstoreAsync<T>(...args: any[]): Promise<T>
         zrange(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         zrange(...args: any[]): boolean;
-        zrangeAsync(...args: any[]): Promise<string>
+        zrangeAsync<T>(...args: any[]): Promise<T>
         zrangebyscore(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         zrangebyscore(...args: any[]): boolean;
-        zrangebyscoreAsync(...args: any[]): Promise<string>
+        zrangebyscoreAsync<T>(...args: any[]): Promise<T>
         zrevrangebyscore(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         zrevrangebyscore(...args: any[]): boolean;
-        zrevrangebyscoreAsync(...args: any[]): Promise<string>
+        zrevrangebyscoreAsync<T>(...args: any[]): Promise<T>
         zcount(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         zcount(...args: any[]): boolean;
-        zcountAsync(...args: any[]): Promise<string>
+        zcountAsync<T>(...args: any[]): Promise<T>
         zrevrange(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         zrevrange(...args: any[]): boolean;
-        zrevrangeAsync(...args: any[]): Promise<string>
+        zrevrangeAsync<T>(...args: any[]): Promise<T>
         zcard(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         zcard(...args: any[]): boolean;
-        zcardAsync(...args: any[]): Promise<string>
+        zcardAsync<T>(...args: any[]): Promise<T>
         zscore(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         zscore(...args: any[]): boolean;
-        zscoreAsync(...args: any[]): Promise<string>
+        zscoreAsync<T>(...args: any[]): Promise<T>
         zrank(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         zrank(...args: any[]): boolean;
-        zrankAsync(...args: any[]): Promise<string>
+        zrankAsync<T>(...args: any[]): Promise<T>
         zrevrank(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         zrevrank(...args: any[]): boolean;
-        zrevrankAsync(...args: any[]): Promise<string>
+        zrevrankAsync<T>(...args: any[]): Promise<T>
         hset(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         hset(...args: any[]): boolean;
-        hsetAsync(...args: any[]): Promise<string>
+        hsetAsync<T>(...args: any[]): Promise<T>
         hsetnx(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         hsetnx(...args: any[]): boolean;
-        hsetnxAsync(...args: any[]): Promise<string>
+        hsetnxAsync<T>(...args: any[]): Promise<T>
         hget(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         hget(...args: any[]): boolean;
-        hgetAsync(...args: any[]): Promise<string>
+        hgetAsync<T>(...args: any[]): Promise<T>
         hmset(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         hmset(key: string, hash: any, callback?: redis.ResCallbackT<any>): boolean;
         hmset(...args: any[]): boolean;
-        hmsetAsync(...args: any[]): Promise<string>
+        hmsetAsync<T>(...args: any[]): Promise<T>
         hmget(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         hmget(...args: any[]): boolean;
-        hmgetAsync(...args: any[]): Promise<string>
+        hmgetAsync<T>(...args: any[]): Promise<T>
         hincrby(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         hincrby(...args: any[]): boolean;
-        hincrbyAsync(...args: any[]): Promise<string>
+        hincrbyAsync<T>(...args: any[]): Promise<T>
         hdel(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         hdel(...args: any[]): boolean;
-        hdelAsync(...args: any[]): Promise<string>
+        hdelAsync<T>(...args: any[]): Promise<T>
         hlen(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         hlen(...args: any[]): boolean;
-        hlenAsync(...args: any[]): Promise<string>
+        hlenAsync<T>(...args: any[]): Promise<T>
         hkeys(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         hkeys(...args: any[]): boolean;
-        hkeysAsync(...args: any[]): Promise<string>
+        hkeysAsync<T>(...args: any[]): Promise<T>
         hvals(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         hvals(...args: any[]): boolean;
-        hvalsAsync(...args: any[]): Promise<string>
+        hvalsAsync<T>(...args: any[]): Promise<T>
         hgetall(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         hgetall(...args: any[]): boolean;
-        hgetallAsync(...args: any[]): Promise<string>
+        hgetallAsync<T>(...args: any[]): Promise<T>
         hgetall(key: string, callback?: redis.ResCallbackT<any>): boolean;
         hexists(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         hexists(...args: any[]): boolean;
-        hexistsAsync(...args: any[]): Promise<string>
+        hexistsAsync<T>(...args: any[]): Promise<T>
         incrby(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         incrby(...args: any[]): boolean;
-        incrbyAsync(...args: any[]): Promise<string>
+        incrbyAsync<T>(...args: any[]): Promise<T>
         decrby(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         decrby(...args: any[]): boolean;
-        decrbyAsync(...args: any[]): Promise<string>
+        decrbyAsync<T>(...args: any[]): Promise<T>
         getset(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         getset(...args: any[]): boolean;
-        getsetAsync(...args: any[]): Promise<string>
+        getsetAsync<T>(...args: any[]): Promise<T>
         mset(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         mset(...args: any[]): boolean;
-        msetAsync(...args: any[]): Promise<string>
+        msetAsync<T>(...args: any[]): Promise<T>
         msetnx(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         msetnx(...args: any[]): boolean;
-        msetnxAsync(...args: any[]): Promise<string>
+        msetnxAsync<T>(...args: any[]): Promise<T>
         randomkey(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         randomkey(...args: any[]): boolean;
-        randomkeyAsync(...args: any[]): Promise<string>
+        randomkeyAsync<T>(...args: any[]): Promise<T>
         select(args: any[], callback?: redis.ResCallbackT<any>): void;
         select(...args: any[]): void;
-        selectAsync(...args: any[]): Promise<string>
+        selectAsync<T>(...args: any[]): Promise<T>
         move(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         move(...args: any[]): boolean;
-        moveAsync(...args: any[]): Promise<string>
+        moveAsync<T>(...args: any[]): Promise<T>
         rename(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         rename(...args: any[]): boolean;
-        renameAsync(...args: any[]): Promise<string>
+        renameAsync<T>(...args: any[]): Promise<T>
         renamenx(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         renamenx(...args: any[]): boolean;
-        renamenxAsync(...args: any[]): Promise<string>
+        renamenxAsync<T>(...args: any[]): Promise<T>
         expire(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         expire(...args: any[]): boolean;
-        expireAsync(...args: any[]): Promise<string>
+        expireAsync<T>(...args: any[]): Promise<T>
         expireat(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         expireat(...args: any[]): boolean;
-        expireatAsync(...args: any[]): Promise<string>
+        expireatAsync<T>(...args: any[]): Promise<T>
         keys(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         keys(...args: any[]): boolean;
-        keysAsync(...args: any[]): Promise<string>
+        keysAsync<T>(...args: any[]): Promise<T>
         dbsize(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         dbsize(...args: any[]): boolean;
-        dbsizeAsync(...args: any[]): Promise<string>
+        dbsizeAsync<T>(...args: any[]): Promise<T>
         auth(args: any[], callback?: redis.ResCallbackT<any>): void;
         auth(...args: any[]): void;
-        authAsync(...args: any[]): Promise<string>
+        authAsync<T>(...args: any[]): Promise<T>
         ping(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         ping(...args: any[]): boolean;
-        pingAsync(...args: any[]): Promise<string>
+        pingAsync<T>(...args: any[]): Promise<T>
         echo(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         echo(...args: any[]): boolean;
-        echoAsync(...args: any[]): Promise<string>
+        echoAsync<T>(...args: any[]): Promise<T>
         save(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         save(...args: any[]): boolean;
-        saveAsync(...args: any[]): Promise<string>
+        saveAsync<T>(...args: any[]): Promise<T>
         bgsave(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         bgsave(...args: any[]): boolean;
-        bgsaveAsync(...args: any[]): Promise<string>
+        bgsaveAsync<T>(...args: any[]): Promise<T>
         bgrewriteaof(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         bgrewriteaof(...args: any[]): boolean;
-        bgrewriteaofAsync(...args: any[]): Promise<string>
+        bgrewriteaofAsync<T>(...args: any[]): Promise<T>
         shutdown(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         shutdown(...args: any[]): boolean;
-        shutdownAsync(...args: any[]): Promise<string>
+        shutdownAsync<T>(...args: any[]): Promise<T>
         lastsave(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         lastsave(...args: any[]): boolean;
-        lastsaveAsync(...args: any[]): Promise<string>
+        lastsaveAsync<T>(...args: any[]): Promise<T>
         type(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         type(...args: any[]): boolean;
-        typeAsync(...args: any[]): Promise<string>
+        typeAsync<T>(...args: any[]): Promise<T>
         multi(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         multi(...args: any[]): Multi;
-        multiAsync(...args: any[]): Promise<string>
+        multiAsync<T>(...args: any[]): Promise<T>
         exec(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         exec(...args: any[]): boolean;
-        execAsync(...args: any[]): Promise<string>
+        execAsync<T>(...args: any[]): Promise<T>
         discard(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         discard(...args: any[]): boolean;
-        discardAsync(...args: any[]): Promise<string>
+        discardAsync<T>(...args: any[]): Promise<T>
         sync(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         sync(...args: any[]): boolean;
-        syncAsync(...args: any[]): Promise<string>
+        syncAsync<T>(...args: any[]): Promise<T>
         flushdb(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         flushdb(...args: any[]): boolean;
-        flushdbAsync(...args: any[]): Promise<string>
+        flushdbAsync<T>(...args: any[]): Promise<T>
         flushall(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         flushall(...args: any[]): boolean;
-        flushallAsync(...args: any[]): Promise<string>
+        flushallAsync<T>(...args: any[]): Promise<T>
         sort(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         sort(...args: any[]): boolean;
-        sortAsync(...args: any[]): Promise<string>
+        sortAsync<T>(...args: any[]): Promise<T>
         info(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         info(...args: any[]): boolean;
-        infoAsync(...args: any[]): Promise<string>
+        infoAsync<T>(...args: any[]): Promise<T>
         monitor(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         monitor(...args: any[]): boolean;
-        monitorAsync(...args: any[]): Promise<string>
+        monitorAsync<T>(...args: any[]): Promise<T>
         ttl(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         ttl(...args: any[]): boolean;
-        ttlAsync(...args: any[]): Promise<string>
+        ttlAsync<T>(...args: any[]): Promise<T>
         persist(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         persist(...args: any[]): boolean;
-        persistAsync(...args: any[]): Promise<string>
+        persistAsync<T>(...args: any[]): Promise<T>
         slaveof(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         slaveof(...args: any[]): boolean;
-        slaveofAsync(...args: any[]): Promise<string>
+        slaveofAsync<T>(...args: any[]): Promise<T>
         debug(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         debug(...args: any[]): boolean;
-        debugAsync(...args: any[]): Promise<string>
+        debugAsync<T>(...args: any[]): Promise<T>
         config(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         config(...args: any[]): boolean;
-        configAsync(...args: any[]): Promise<string>
+        configAsync<T>(...args: any[]): Promise<T>
         subscribe(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         subscribe(...args: any[]): boolean;
-        subscribeAsync(...args: any[]): Promise<string>
+        subscribeAsync<T>(...args: any[]): Promise<T>
         unsubscribe(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         unsubscribe(...args: any[]): boolean;
-        unsubscribeAsync(...args: any[]): Promise<string>
+        unsubscribeAsync<T>(...args: any[]): Promise<T>
         psubscribe(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         psubscribe(...args: any[]): boolean;
-        psubscribeAsync(...args: any[]): Promise<string>
+        psubscribeAsync<T>(...args: any[]): Promise<T>
         punsubscribe(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         punsubscribe(...args: any[]): boolean;
-        punsubscribeAsync(...args: any[]): Promise<string>
+        punsubscribeAsync<T>(...args: any[]): Promise<T>
         publish(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         publish(...args: any[]): boolean;
-        publishAsync(...args: any[]): Promise<string>
+        publishAsync<T>(...args: any[]): Promise<T>
         watch(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         watch(...args: any[]): boolean;
-        watchAsync(...args: any[]): Promise<string>
+        watchAsync<T>(...args: any[]): Promise<T>
         unwatch(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         unwatch(...args: any[]): boolean;
-        unwatchAsync(...args: any[]): Promise<string>
+        unwatchAsync<T>(...args: any[]): Promise<T>
         cluster(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         cluster(...args: any[]): boolean;
-        clusterAsync(...args: any[]): Promise<string>
+        clusterAsync<T>(...args: any[]): Promise<T>
         restore(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         restore(...args: any[]): boolean;
-        restoreAsync(...args: any[]): Promise<string>
+        restoreAsync<T>(...args: any[]): Promise<T>
         migrate(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         migrate(...args: any[]): boolean;
-        migrateAsync(...args: any[]): Promise<string>
+        migrateAsync<T>(...args: any[]): Promise<T>
         dump(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         dump(...args: any[]): boolean;
-        dumpAsync(...args: any[]): Promise<string>
+        dumpAsync<T>(...args: any[]): Promise<T>
         object(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         object(...args: any[]): boolean;
-        objectAsync(...args: any[]): Promise<string>
+        objectAsync<T>(...args: any[]): Promise<T>
         client(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         client(...args: any[]): boolean;
-        clientAsync(...args: any[]): Promise<string>
+        clientAsync<T>(...args: any[]): Promise<T>
         eval(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         eval(...args: any[]): boolean;
-        evalAsync(...args: any[]): Promise<string>
+        evalAsync<T>(...args: any[]): Promise<T>
         evalsha(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         evalsha(...args: any[]): boolean;
-        evalshaAsync(...args: any[]): Promise<string>
+        evalshaAsync<T>(...args: any[]): Promise<T>
         script(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         script(...args: any[]): boolean;
-        scriptAsync(...args: any[]): Promise<string>
+        scriptAsync<T>(...args: any[]): Promise<T>
         script(key: string, callback?: redis.ResCallbackT<any>): boolean;
         quit(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         quit(...args: any[]): boolean;
-        quitAsync(...args: any[]): Promise<string>
+        quitAsync<T>(...args: any[]): Promise<T>
         scan(...args: any[]): boolean;
-        scanAsync(...args: any[]): Promise<string>
+        scanAsync<T>(...args: any[]): Promise<T>
         scan(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         hscan(...args: any[]): boolean;
-        hscanAsync(...args: any[]): Promise<string>
+        hscanAsync<T>(...args: any[]): Promise<T>
         hscan(args: any[], callback?: redis.ResCallbackT<any>): boolean;
         zscan(...args: any[]): boolean;
-        zscanAsync(...args: any[]): Promise<string>
+        zscanAsync<T>(...args: any[]): Promise<T>
         zscan(args: any[], callback?: redis.ResCallbackT<any>): boolean;
     }
 
@@ -494,397 +494,397 @@ declare namespace redis {
 
         get(args: any[], callback?: redis.ResCallbackT<string>): Multi;
         get(...args: any[]): Multi;
-        getAsync(...args: any[]): Promise<string>
+        getAsync<T>(...args: any[]): Promise<T>
         set(args: any[], callback?: redis.ResCallbackT<string>): Multi;
         set(...args: any[]): Multi;
-        setAsync(...args: any[]): Promise<string>
+        setAsync<T>(...args: any[]): Promise<T>
         setnx(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         setnx(...args: any[]): Multi;
-        setnxAsync(...args: any[]): Promise<string>
+        setnxAsync<T>(...args: any[]): Promise<T>
         setex(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         setex(...args: any[]): Multi;
-        setexAsync(...args: any[]): Promise<string>
+        setexAsync<T>(...args: any[]): Promise<T>
         append(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         append(...args: any[]): Multi;
-        appendAsync(...args: any[]): Promise<string>
+        appendAsync<T>(...args: any[]): Promise<T>
         strlen(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         strlen(...args: any[]): Multi;
-        strlenAsync(...args: any[]): Promise<string>
+        strlenAsync<T>(...args: any[]): Promise<T>
         del(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         del(...args: any[]): Multi;
-        delAsync(...args: any[]): Promise<string>
+        delAsync<T>(...args: any[]): Promise<T>
         exists(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         exists(...args: any[]): Multi;
-        existsAsync(...args: any[]): Promise<string>
+        existsAsync<T>(...args: any[]): Promise<T>
         setbit(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         setbit(...args: any[]): Multi;
-        setbitAsync(...args: any[]): Promise<string>
+        setbitAsync<T>(...args: any[]): Promise<T>
         getbit(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         getbit(...args: any[]): Multi;
-        getbitAsync(...args: any[]): Promise<string>
+        getbitAsync<T>(...args: any[]): Promise<T>
         setrange(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         setrange(...args: any[]): Multi;
-        setrangeAsync(...args: any[]): Promise<string>
+        setrangeAsync<T>(...args: any[]): Promise<T>
         getrange(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         getrange(...args: any[]): Multi;
-        getrangeAsync(...args: any[]): Promise<string>
+        getrangeAsync<T>(...args: any[]): Promise<T>
         substr(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         substr(...args: any[]): Multi;
-        substrAsync(...args: any[]): Promise<string>
+        substrAsync<T>(...args: any[]): Promise<T>
         incr(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         incr(...args: any[]): Multi;
-        incrAsync(...args: any[]): Promise<string>
+        incrAsync<T>(...args: any[]): Promise<T>
         decr(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         decr(...args: any[]): Multi;
-        decrAsync(...args: any[]): Promise<string>
+        decrAsync<T>(...args: any[]): Promise<T>
         mget(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         mget(...args: any[]): Multi;
-        mgetAsync(...args: any[]): Promise<string>
+        mgetAsync<T>(...args: any[]): Promise<T>
         rpush(...args: any[]): Multi;
-        rpushAsync(...args: any[]): Promise<string>
+        rpushAsync<T>(...args: any[]): Promise<T>
         lpush(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         lpush(...args: any[]): Multi;
-        lpushAsync(...args: any[]): Promise<string>
+        lpushAsync<T>(...args: any[]): Promise<T>
         rpushx(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         rpushx(...args: any[]): Multi;
-        rpushxAsync(...args: any[]): Promise<string>
+        rpushxAsync<T>(...args: any[]): Promise<T>
         lpushx(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         lpushx(...args: any[]): Multi;
-        lpushxAsync(...args: any[]): Promise<string>
+        lpushxAsync<T>(...args: any[]): Promise<T>
         linsert(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         linsert(...args: any[]): Multi;
-        linsertAsync(...args: any[]): Promise<string>
+        linsertAsync<T>(...args: any[]): Promise<T>
         rpop(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         rpop(...args: any[]): Multi;
-        rpopAsync(...args: any[]): Promise<string>
+        rpopAsync<T>(...args: any[]): Promise<T>
         lpop(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         lpop(...args: any[]): Multi;
-        lpopAsync(...args: any[]): Promise<string>
+        lpopAsync<T>(...args: any[]): Promise<T>
         brpop(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         brpop(...args: any[]): Multi;
-        brpopAsync(...args: any[]): Promise<string>
+        brpopAsync<T>(...args: any[]): Promise<T>
         brpoplpush(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         brpoplpush(...args: any[]): Multi;
-        brpoplpushAsync(...args: any[]): Promise<string>
+        brpoplpushAsync<T>(...args: any[]): Promise<T>
         blpop(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         blpop(...args: any[]): Multi;
-        blpopAsync(...args: any[]): Promise<string>
+        blpopAsync<T>(...args: any[]): Promise<T>
         llen(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         llen(...args: any[]): Multi;
-        llenAsync(...args: any[]): Promise<string>
+        llenAsync<T>(...args: any[]): Promise<T>
         lindex(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         lindex(...args: any[]): Multi;
-        lindexAsync(...args: any[]): Promise<string>
+        lindexAsync<T>(...args: any[]): Promise<T>
         lset(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         lset(...args: any[]): Multi;
-        lsetAsync(...args: any[]): Promise<string>
+        lsetAsync<T>(...args: any[]): Promise<T>
         lrange(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         lrange(...args: any[]): Multi;
-        lrangeAsync(...args: any[]): Promise<string>
+        lrangeAsync<T>(...args: any[]): Promise<T>
         ltrim(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         ltrim(...args: any[]): Multi;
-        ltrimAsync(...args: any[]): Promise<string>
+        ltrimAsync<T>(...args: any[]): Promise<T>
         lrem(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         lrem(...args: any[]): Multi;
-        lremAsync(...args: any[]): Promise<string>
+        lremAsync<T>(...args: any[]): Promise<T>
         rpoplpush(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         rpoplpush(...args: any[]): Multi;
-        rpoplpushAsync(...args: any[]): Promise<string>
+        rpoplpushAsync<T>(...args: any[]): Promise<T>
         sadd(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         sadd(...args: any[]): Multi;
-        saddAsync(...args: any[]): Promise<string>
+        saddAsync<T>(...args: any[]): Promise<T>
         srem(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         srem(...args: any[]): Multi;
-        sremAsync(...args: any[]): Promise<string>
+        sremAsync<T>(...args: any[]): Promise<T>
         smove(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         smove(...args: any[]): Multi;
-        smoveAsync(...args: any[]): Promise<string>
+        smoveAsync<T>(...args: any[]): Promise<T>
         sismember(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         sismember(...args: any[]): Multi;
-        sismemberAsync(...args: any[]): Promise<string>
+        sismemberAsync<T>(...args: any[]): Promise<T>
         scard(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         scard(...args: any[]): Multi;
-        scardAsync(...args: any[]): Promise<string>
+        scardAsync<T>(...args: any[]): Promise<T>
         spop(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         spop(...args: any[]): Multi;
-        spopAsync(...args: any[]): Promise<string>
+        spopAsync<T>(...args: any[]): Promise<T>
         srandmember(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         srandmember(...args: any[]): Multi;
-        srandmemberAsync(...args: any[]): Promise<string>
+        srandmemberAsync<T>(...args: any[]): Promise<T>
         sinter(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         sinter(...args: any[]): Multi;
-        sinterAsync(...args: any[]): Promise<string>
+        sinterAsync<T>(...args: any[]): Promise<T>
         sinterstore(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         sinterstore(...args: any[]): Multi;
-        sinterstoreAsync(...args: any[]): Promise<string>
+        sinterstoreAsync<T>(...args: any[]): Promise<T>
         sunion(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         sunion(...args: any[]): Multi;
-        sunionAsync(...args: any[]): Promise<string>
+        sunionAsync<T>(...args: any[]): Promise<T>
         sunionstore(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         sunionstore(...args: any[]): Multi;
-        sunionstoreAsync(...args: any[]): Promise<string>
+        sunionstoreAsync<T>(...args: any[]): Promise<T>
         sdiff(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         sdiff(...args: any[]): Multi;
-        sdiffAsync(...args: any[]): Promise<string>
+        sdiffAsync<T>(...args: any[]): Promise<T>
         sdiffstore(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         sdiffstore(...args: any[]): Multi;
-        sdiffstoreAsync(...args: any[]): Promise<string>
+        sdiffstoreAsync<T>(...args: any[]): Promise<T>
         smembers(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         smembers(...args: any[]): Multi;
-        smembersAsync(...args: any[]): Promise<string>
+        smembersAsync<T>(...args: any[]): Promise<T>
         zadd(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         zadd(...args: any[]): Multi;
-        zaddAsync(...args: any[]): Promise<string>
+        zaddAsync<T>(...args: any[]): Promise<T>
         zincrby(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         zincrby(...args: any[]): Multi;
-        zincrbyAsync(...args: any[]): Promise<string>
+        zincrbyAsync<T>(...args: any[]): Promise<T>
         zrem(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         zrem(...args: any[]): Multi;
-        zremAsync(...args: any[]): Promise<string>
+        zremAsync<T>(...args: any[]): Promise<T>
         zremrangebyscore(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         zremrangebyscore(...args: any[]): Multi;
-        zremrangebyscoreAsync(...args: any[]): Promise<string>
+        zremrangebyscoreAsync<T>(...args: any[]): Promise<T>
         zremrangebyrank(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         zremrangebyrank(...args: any[]): Multi;
-        zremrangebyrankAsync(...args: any[]): Promise<string>
+        zremrangebyrankAsync<T>(...args: any[]): Promise<T>
         zunionstore(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         zunionstore(...args: any[]): Multi;
-        zunionstoreAsync(...args: any[]): Promise<string>
+        zunionstoreAsync<T>(...args: any[]): Promise<T>
         zinterstore(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         zinterstore(...args: any[]): Multi;
-        zinterstoreAsync(...args: any[]): Promise<string>
+        zinterstoreAsync<T>(...args: any[]): Promise<T>
         zrange(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         zrange(...args: any[]): Multi;
-        zrangeAsync(...args: any[]): Promise<string>
+        zrangeAsync<T>(...args: any[]): Promise<T>
         zrangebyscore(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         zrangebyscore(...args: any[]): Multi;
-        zrangebyscoreAsync(...args: any[]): Promise<string>
+        zrangebyscoreAsync<T>(...args: any[]): Promise<T>
         zrevrangebyscore(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         zrevrangebyscore(...args: any[]): Multi;
-        zrevrangebyscoreAsync(...args: any[]): Promise<string>
+        zrevrangebyscoreAsync<T>(...args: any[]): Promise<T>
         zcount(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         zcount(...args: any[]): Multi;
-        zcountAsync(...args: any[]): Promise<string>
+        zcountAsync<T>(...args: any[]): Promise<T>
         zrevrange(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         zrevrange(...args: any[]): Multi;
-        zrevrangeAsync(...args: any[]): Promise<string>
+        zrevrangeAsync<T>(...args: any[]): Promise<T>
         zcard(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         zcard(...args: any[]): Multi;
-        zcardAsync(...args: any[]): Promise<string>
+        zcardAsync<T>(...args: any[]): Promise<T>
         zscore(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         zscore(...args: any[]): Multi;
-        zscoreAsync(...args: any[]): Promise<string>
+        zscoreAsync<T>(...args: any[]): Promise<T>
         zrank(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         zrank(...args: any[]): Multi;
-        zrankAsync(...args: any[]): Promise<string>
+        zrankAsync<T>(...args: any[]): Promise<T>
         zrevrank(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         zrevrank(...args: any[]): Multi;
-        zrevrankAsync(...args: any[]): Promise<string>
+        zrevrankAsync<T>(...args: any[]): Promise<T>
         hset(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         hset(...args: any[]): Multi;
-        hsetAsync(...args: any[]): Promise<string>
+        hsetAsync<T>(...args: any[]): Promise<T>
         hsetnx(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         hsetnx(...args: any[]): Multi;
-        hsetnxAsync(...args: any[]): Promise<string>
+        hsetnxAsync<T>(...args: any[]): Promise<T>
         hget(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         hget(...args: any[]): Multi;
-        hgetAsync(...args: any[]): Promise<string>
+        hgetAsync<T>(...args: any[]): Promise<T>
         hmset(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         hmset(key: string, hash: any, callback?: redis.ResCallbackT<any>): Multi;
         hmset(...args: any[]): Multi;
-        hmsetAsync(...args: any[]): Promise<string>
+        hmsetAsync<T>(...args: any[]): Promise<T>
         hmget(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         hmget(...args: any[]): Multi;
-        hmgetAsync(...args: any[]): Promise<string>
+        hmgetAsync<T>(...args: any[]): Promise<T>
         hincrby(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         hincrby(...args: any[]): Multi;
-        hincrbyAsync(...args: any[]): Promise<string>
+        hincrbyAsync<T>(...args: any[]): Promise<T>
         hdel(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         hdel(...args: any[]): Multi;
-        hdelAsync(...args: any[]): Promise<string>
+        hdelAsync<T>(...args: any[]): Promise<T>
         hlen(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         hlen(...args: any[]): Multi;
-        hlenAsync(...args: any[]): Promise<string>
+        hlenAsync<T>(...args: any[]): Promise<T>
         hkeys(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         hkeys(...args: any[]): Multi;
-        hkeysAsync(...args: any[]): Promise<string>
+        hkeysAsync<T>(...args: any[]): Promise<T>
         hvals(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         hvals(...args: any[]): Multi;
-        hvalsAsync(...args: any[]): Promise<string>
+        hvalsAsync<T>(...args: any[]): Promise<T>
         hgetall(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         hgetall(...args: any[]): Multi;
-        hgetallAsync(...args: any[]): Promise<string>
+        hgetallAsync<T>(...args: any[]): Promise<T>
         hgetall(key: string, callback?: redis.ResCallbackT<any>): Multi;
         hexists(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         hexists(...args: any[]): Multi;
-        hexistsAsync(...args: any[]): Promise<string>
+        hexistsAsync<T>(...args: any[]): Promise<T>
         incrby(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         incrby(...args: any[]): Multi;
-        incrbyAsync(...args: any[]): Promise<string>
+        incrbyAsync<T>(...args: any[]): Promise<T>
         decrby(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         decrby(...args: any[]): Multi;
-        decrbyAsync(...args: any[]): Promise<string>
+        decrbyAsync<T>(...args: any[]): Promise<T>
         getset(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         getset(...args: any[]): Multi;
-        getsetAsync(...args: any[]): Promise<string>
+        getsetAsync<T>(...args: any[]): Promise<T>
         mset(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         mset(...args: any[]): Multi;
-        msetAsync(...args: any[]): Promise<string>
+        msetAsync<T>(...args: any[]): Promise<T>
         msetnx(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         msetnx(...args: any[]): Multi;
-        msetnxAsync(...args: any[]): Promise<string>
+        msetnxAsync<T>(...args: any[]): Promise<T>
         randomkey(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         randomkey(...args: any[]): Multi;
-        randomkeyAsync(...args: any[]): Promise<string>
+        randomkeyAsync<T>(...args: any[]): Promise<T>
         select(args: any[], callback?: redis.ResCallbackT<any>): void;
         select(...args: any[]): Multi;
-        selectAsync(...args: any[]): Promise<string>
+        selectAsync<T>(...args: any[]): Promise<T>
         move(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         move(...args: any[]): Multi;
-        moveAsync(...args: any[]): Promise<string>
+        moveAsync<T>(...args: any[]): Promise<T>
         rename(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         rename(...args: any[]): Multi;
-        renameAsync(...args: any[]): Promise<string>
+        renameAsync<T>(...args: any[]): Promise<T>
         renamenx(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         renamenx(...args: any[]): Multi;
-        renamenxAsync(...args: any[]): Promise<string>
+        renamenxAsync<T>(...args: any[]): Promise<T>
         expire(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         expire(...args: any[]): Multi;
-        expireAsync(...args: any[]): Promise<string>
+        expireAsync<T>(...args: any[]): Promise<T>
         expireat(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         expireat(...args: any[]): Multi;
-        expireatAsync(...args: any[]): Promise<string>
+        expireatAsync<T>(...args: any[]): Promise<T>
         keys(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         keys(...args: any[]): Multi;
-        keysAsync(...args: any[]): Promise<string>
+        keysAsync<T>(...args: any[]): Promise<T>
         dbsize(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         dbsize(...args: any[]): Multi;
-        dbsizeAsync(...args: any[]): Promise<string>
+        dbsizeAsync<T>(...args: any[]): Promise<T>
         auth(args: any[], callback?: redis.ResCallbackT<any>): void;
         auth(...args: any[]): void;
-        authAsync(...args: any[]): Promise<string>
+        authAsync<T>(...args: any[]): Promise<T>
         ping(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         ping(...args: any[]): Multi;
-        pingAsync(...args: any[]): Promise<string>
+        pingAsync<T>(...args: any[]): Promise<T>
         echo(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         echo(...args: any[]): Multi;
-        echoAsync(...args: any[]): Promise<string>
+        echoAsync<T>(...args: any[]): Promise<T>
         save(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         save(...args: any[]): Multi;
-        saveAsync(...args: any[]): Promise<string>
+        saveAsync<T>(...args: any[]): Promise<T>
         bgsave(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         bgsave(...args: any[]): Multi;
-        bgsaveAsync(...args: any[]): Promise<string>
+        bgsaveAsync<T>(...args: any[]): Promise<T>
         bgrewriteaof(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         bgrewriteaof(...args: any[]): Multi;
-        bgrewriteaofAsync(...args: any[]): Promise<string>
+        bgrewriteaofAsync<T>(...args: any[]): Promise<T>
         shutdown(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         shutdown(...args: any[]): Multi;
-        shutdownAsync(...args: any[]): Promise<string>
+        shutdownAsync<T>(...args: any[]): Promise<T>
         lastsave(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         lastsave(...args: any[]): Multi;
-        lastsaveAsync(...args: any[]): Promise<string>
+        lastsaveAsync<T>(...args: any[]): Promise<T>
         type(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         type(...args: any[]): Multi;
-        typeAsync(...args: any[]): Promise<string>
+        typeAsync<T>(...args: any[]): Promise<T>
         multi(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         multi(...args: any[]): Multi;
-        multiAsync(...args: any[]): Promise<string>
+        multiAsync<T>(...args: any[]): Promise<T>
         exec(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         exec(...args: any[]): Multi;
-        execAsync(...args: any[]): Promise<string>
+        execAsync<T>(...args: any[]): Promise<T>
         discard(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         discard(...args: any[]): Multi;
-        discardAsync(...args: any[]): Promise<string>
+        discardAsync<T>(...args: any[]): Promise<T>
         sync(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         sync(...args: any[]): Multi;
-        syncAsync(...args: any[]): Promise<string>
+        syncAsync<T>(...args: any[]): Promise<T>
         flushdb(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         flushdb(...args: any[]): Multi;
-        flushdbAsync(...args: any[]): Promise<string>
+        flushdbAsync<T>(...args: any[]): Promise<T>
         flushall(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         flushall(...args: any[]): Multi;
-        flushallAsync(...args: any[]): Promise<string>
+        flushallAsync<T>(...args: any[]): Promise<T>
         sort(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         sort(...args: any[]): Multi;
-        sortAsync(...args: any[]): Promise<string>
+        sortAsync<T>(...args: any[]): Promise<T>
         info(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         info(...args: any[]): Multi;
-        infoAsync(...args: any[]): Promise<string>
+        infoAsync<T>(...args: any[]): Promise<T>
         monitor(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         monitor(...args: any[]): Multi;
-        monitorAsync(...args: any[]): Promise<string>
+        monitorAsync<T>(...args: any[]): Promise<T>
         ttl(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         ttl(...args: any[]): Multi;
-        ttlAsync(...args: any[]): Promise<string>
+        ttlAsync<T>(...args: any[]): Promise<T>
         persist(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         persist(...args: any[]): Multi;
-        persistAsync(...args: any[]): Promise<string>
+        persistAsync<T>(...args: any[]): Promise<T>
         slaveof(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         slaveof(...args: any[]): Multi;
-        slaveofAsync(...args: any[]): Promise<string>
+        slaveofAsync<T>(...args: any[]): Promise<T>
         debug(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         debug(...args: any[]): Multi;
-        debugAsync(...args: any[]): Promise<string>
+        debugAsync<T>(...args: any[]): Promise<T>
         config(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         config(...args: any[]): Multi;
-        configAsync(...args: any[]): Promise<string>
+        configAsync<T>(...args: any[]): Promise<T>
         subscribe(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         subscribe(...args: any[]): Multi;
-        subscribeAsync(...args: any[]): Promise<string>
+        subscribeAsync<T>(...args: any[]): Promise<T>
         unsubscribe(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         unsubscribe(...args: any[]): Multi;
-        unsubscribeAsync(...args: any[]): Promise<string>
+        unsubscribeAsync<T>(...args: any[]): Promise<T>
         psubscribe(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         psubscribe(...args: any[]): Multi;
-        psubscribeAsync(...args: any[]): Promise<string>
+        psubscribeAsync<T>(...args: any[]): Promise<T>
         punsubscribe(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         punsubscribe(...args: any[]): Multi;
-        punsubscribeAsync(...args: any[]): Promise<string>
+        punsubscribeAsync<T>(...args: any[]): Promise<T>
         publish(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         publish(...args: any[]): Multi;
-        publishAsync(...args: any[]): Promise<string>
+        publishAsync<T>(...args: any[]): Promise<T>
         watch(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         watch(...args: any[]): Multi;
-        watchAsync(...args: any[]): Promise<string>
+        watchAsync<T>(...args: any[]): Promise<T>
         unwatch(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         unwatch(...args: any[]): Multi;
-        unwatchAsync(...args: any[]): Promise<string>
+        unwatchAsync<T>(...args: any[]): Promise<T>
         cluster(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         cluster(...args: any[]): Multi;
-        clusterAsync(...args: any[]): Promise<string>
+        clusterAsync<T>(...args: any[]): Promise<T>
         restore(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         restore(...args: any[]): Multi;
-        restoreAsync(...args: any[]): Promise<string>
+        restoreAsync<T>(...args: any[]): Promise<T>
         migrate(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         migrate(...args: any[]): Multi;
-        migrateAsync(...args: any[]): Promise<string>
+        migrateAsync<T>(...args: any[]): Promise<T>
         dump(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         dump(...args: any[]): Multi;
-        dumpAsync(...args: any[]): Promise<string>
+        dumpAsync<T>(...args: any[]): Promise<T>
         object(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         object(...args: any[]): Multi;
-        objectAsync(...args: any[]): Promise<string>
+        objectAsync<T>(...args: any[]): Promise<T>
         client(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         client(...args: any[]): Multi;
-        clientAsync(...args: any[]): Promise<string>
+        clientAsync<T>(...args: any[]): Promise<T>
         eval(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         eval(...args: any[]): Multi;
-        evalAsync(...args: any[]): Promise<string>
+        evalAsync<T>(...args: any[]): Promise<T>
         evalsha(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         evalsha(...args: any[]): Multi;
-        evalshaAsync(...args: any[]): Promise<string>
+        evalshaAsync<T>(...args: any[]): Promise<T>
         quit(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         quit(...args: any[]): Multi;
-        quitAsync(...args: any[]): Promise<string>
+        quitAsync<T>(...args: any[]): Promise<T>
         scan(...args: any[]): Multi;
-        scanAsync(...args: any[]): Promise<string>
+        scanAsync<T>(...args: any[]): Promise<T>
         scan(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         hscan(...args: any[]): Multi;
-        hscanAsync(...args: any[]): Promise<string>
+        hscanAsync<T>(...args: any[]): Promise<T>
         hscan(args: any[], callback?: redis.ResCallbackT<any>): Multi;
         zscan(...args: any[]): Multi;
-        zscanAsync(...args: any[]): Promise<string>
+        zscanAsync<T>(...args: any[]): Promise<T>
         zscan(args: any[], callback?: redis.ResCallbackT<any>): Multi;
     }
 
