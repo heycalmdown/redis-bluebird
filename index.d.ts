@@ -136,7 +136,7 @@ declare namespace redis {
         decrAsync(...args:any[]): Promise<string>
         mget(args:any[], callback?:redis.ResCallbackT<any>): boolean;
         mget(...args:any[]): boolean;
-        mgetAsync(...args:any[]): Promise<string>
+        mgetAsync(...args:any[]): Promise<string[]>
         rpush(...args:any[]): boolean;
         rpushAsync(...args:any[]): Promise<string>
         lpush(args:any[], callback?:redis.ResCallbackT<any>): boolean;
@@ -252,13 +252,13 @@ declare namespace redis {
         zinterstoreAsync(...args:any[]): Promise<string>
         zrange(args:any[], callback?:redis.ResCallbackT<any>): boolean;
         zrange(...args:any[]): boolean;
-        zrangeAsync(...args:any[]): Promise<string>
+        zrangeAsync(...args:any[]): Promise<string[]>
         zrangebyscore(args:any[], callback?:redis.ResCallbackT<any>): boolean;
         zrangebyscore(...args:any[]): boolean;
-        zrangebyscoreAsync(...args:any[]): Promise<string>
+        zrangebyscoreAsync(...args:any[]): Promise<string[]>
         zrevrangebyscore(args:any[], callback?:redis.ResCallbackT<any>): boolean;
         zrevrangebyscore(...args:any[]): boolean;
-        zrevrangebyscoreAsync(...args:any[]): Promise<string>
+        zrevrangebyscoreAsync(...args:any[]): Promise<string[]>
         zcount(args:any[], callback?:redis.ResCallbackT<any>): boolean;
         zcount(...args:any[]): boolean;
         zcountAsync(...args:any[]): Promise<string>
@@ -292,7 +292,7 @@ declare namespace redis {
         hmsetAsync(...args:any[]): Promise<string>
         hmget(args:any[], callback?:redis.ResCallbackT<any>): boolean;
         hmget(...args:any[]): boolean;
-        hmgetAsync(...args:any[]): Promise<string>
+        hmgetAsync(...args:any[]): Promise<string[]>
         hincrby(args:any[], callback?:redis.ResCallbackT<any>): boolean;
         hincrby(...args:any[]): boolean;
         hincrbyAsync(...args:any[]): Promise<string>
@@ -304,13 +304,13 @@ declare namespace redis {
         hlenAsync(...args:any[]): Promise<string>
         hkeys(args:any[], callback?:redis.ResCallbackT<any>): boolean;
         hkeys(...args:any[]): boolean;
-        hkeysAsync(...args:any[]): Promise<string>
+        hkeysAsync(...args:any[]): Promise<string[]>
         hvals(args:any[], callback?:redis.ResCallbackT<any>): boolean;
         hvals(...args:any[]): boolean;
-        hvalsAsync(...args:any[]): Promise<string>
+        hvalsAsync(...args:any[]): Promise<string[]>
         hgetall(args:any[], callback?:redis.ResCallbackT<any>): boolean;
         hgetall(...args:any[]): boolean;
-        hgetallAsync(...args:any[]): Promise<string>
+        hgetallAsync(...args:any[]): Promise<string[]>
         hgetall(key:string, callback?:redis.ResCallbackT<any>): boolean;
         hexists(args:any[], callback?:redis.ResCallbackT<any>): boolean;
         hexists(...args:any[]): boolean;
@@ -544,7 +544,7 @@ declare namespace redis {
         decrAsync(...args:any[]): Promise<string>
         mget(args:any[], callback?:redis.ResCallbackT<any>): Multi;
         mget(...args:any[]): Multi;
-        mgetAsync(...args:any[]): Promise<string>
+        mgetAsync(...args:any[]): Promise<string[]>
         rpush(...args:any[]): Multi;
         rpushAsync(...args:any[]): Promise<string>
         lpush(args:any[], callback?:redis.ResCallbackT<any>): Multi;
@@ -636,7 +636,7 @@ declare namespace redis {
         sdiffstoreAsync(...args:any[]): Promise<string>
         smembers(args:any[], callback?:redis.ResCallbackT<any>): Multi;
         smembers(...args:any[]): Multi;
-        smembersAsync(...args:any[]): Promise<string>
+        smembersAsync(...args:any[]): Promise<string[]>
         zadd(args:any[], callback?:redis.ResCallbackT<any>): Multi;
         zadd(...args:any[]): Multi;
         zaddAsync(...args:any[]): Promise<string>
@@ -660,19 +660,19 @@ declare namespace redis {
         zinterstoreAsync(...args:any[]): Promise<string>
         zrange(args:any[], callback?:redis.ResCallbackT<any>): Multi;
         zrange(...args:any[]): Multi;
-        zrangeAsync(...args:any[]): Promise<string>
+        zrangeAsync(...args:any[]): Promise<string[]>
         zrangebyscore(args:any[], callback?:redis.ResCallbackT<any>): Multi;
         zrangebyscore(...args:any[]): Multi;
-        zrangebyscoreAsync(...args:any[]): Promise<string>
+        zrangebyscoreAsync(...args:any[]): Promise<string[]>
         zrevrangebyscore(args:any[], callback?:redis.ResCallbackT<any>): Multi;
         zrevrangebyscore(...args:any[]): Multi;
-        zrevrangebyscoreAsync(...args:any[]): Promise<string>
+        zrevrangebyscoreAsync(...args:any[]): Promise<string[]>
         zcount(args:any[], callback?:redis.ResCallbackT<any>): Multi;
         zcount(...args:any[]): Multi;
         zcountAsync(...args:any[]): Promise<string>
         zrevrange(args:any[], callback?:redis.ResCallbackT<any>): Multi;
         zrevrange(...args:any[]): Multi;
-        zrevrangeAsync(...args:any[]): Promise<string>
+        zrevrangeAsync(...args:any[]): Promise<string[]>
         zcard(args:any[], callback?:redis.ResCallbackT<any>): Multi;
         zcard(...args:any[]): Multi;
         zcardAsync(...args:any[]): Promise<string>
@@ -700,7 +700,7 @@ declare namespace redis {
         hmsetAsync(...args:any[]): Promise<string>
         hmget(args:any[], callback?:redis.ResCallbackT<any>): Multi;
         hmget(...args:any[]): Multi;
-        hmgetAsync(...args:any[]): Promise<string>
+        hmgetAsync(...args:any[]): Promise<string[]>
         hincrby(args:any[], callback?:redis.ResCallbackT<any>): Multi;
         hincrby(...args:any[]): Multi;
         hincrbyAsync(...args:any[]): Promise<string>
@@ -712,13 +712,13 @@ declare namespace redis {
         hlenAsync(...args:any[]): Promise<string>
         hkeys(args:any[], callback?:redis.ResCallbackT<any>): Multi;
         hkeys(...args:any[]): Multi;
-        hkeysAsync(...args:any[]): Promise<string>
+        hkeysAsync(...args:any[]): Promise<string[]>
         hvals(args:any[], callback?:redis.ResCallbackT<any>): Multi;
         hvals(...args:any[]): Multi;
-        hvalsAsync(...args:any[]): Promise<string>
+        hvalsAsync(...args:any[]): Promise<string[]>
         hgetall(args:any[], callback?:redis.ResCallbackT<any>): Multi;
         hgetall(...args:any[]): Multi;
-        hgetallAsync(...args:any[]): Promise<string>
+        hgetallAsync(...args:any[]): Promise<string[]>
         hgetall(key:string, callback?:redis.ResCallbackT<any>): Multi;
         hexists(args:any[], callback?:redis.ResCallbackT<any>): Multi;
         hexists(...args:any[]): Multi;
