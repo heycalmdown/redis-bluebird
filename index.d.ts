@@ -310,7 +310,7 @@ declare namespace redis {
         hvalsAsync(...args:any[]): Promise<string[]>
         hgetall(args:any[], callback?:redis.ResCallbackT<any>): boolean;
         hgetall(...args:any[]): boolean;
-        hgetallAsync(...args:any[]): Promise<string[]>
+        hgetallAsync(...args:any[]): Promise<{[key: string]: string}>
         hgetall(key:string, callback?:redis.ResCallbackT<any>): boolean;
         hexists(args:any[], callback?:redis.ResCallbackT<any>): boolean;
         hexists(...args:any[]): boolean;
