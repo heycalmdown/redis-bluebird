@@ -10,4 +10,10 @@
 module.exports = require('bluebird').promisifyAll(require('redis'));
 ```
 
+# References
 
+https://redis.io/commands/
+https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/redis/index.d.ts
+
+redis 2.8 기준이나, (현재 island 에서 사용하는 redis는 ^2.6)
+redis command 는 return 값이 바뀌는 수준의 대격변은 없는것으로 보여서 그대로 사용
