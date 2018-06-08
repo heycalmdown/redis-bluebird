@@ -317,7 +317,7 @@ declare namespace redis {
         hexistsAsync(...args:any[]): Promise<string>
         incrby(args:any[], callback?:redis.ResCallbackT<any>): boolean;
         incrby(...args:any[]): boolean;
-        incrbyAsync(...args:any[]): Promise<numbser>
+        incrbyAsync(...args:any[]): Promise<number>
         decrby(args:any[], callback?:redis.ResCallbackT<any>): boolean;
         decrby(...args:any[]): boolean;
         decrbyAsync(...args:any[]): Promise<string>
@@ -725,7 +725,7 @@ declare namespace redis {
         hexistsAsync(...args:any[]): Promise<string>
         incrby(args:any[], callback?:redis.ResCallbackT<any>): Multi;
         incrby(...args:any[]): Multi;
-        incrbyAsync(...args:any[]): Promise<numbser>
+        incrbyAsync(...args:any[]): Promise<number>
         decrby(args:any[], callback?:redis.ResCallbackT<any>): Multi;
         decrby(...args:any[]): Multi;
         decrbyAsync(...args:any[]): Promise<string>
