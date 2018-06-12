@@ -10,4 +10,17 @@
 module.exports = require('bluebird').promisifyAll(require('redis'));
 ```
 
+# References
 
+https://redis.io/commands/
+https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/redis/index.d.ts
+
+# Versions
+
+## 1.0.0
+
+## 1.1.0
+redis 2.8 기준으로, island 에서 사용중인 command 들을 수정.
+현재 island 에서 사용하는 redis는 ^2.6 이나,
+redis command 는 기능 확장만을 하고
+기존 command 의 return 값이 바뀌지는 않는 것으로 보여 2.8 기준으로 작업
