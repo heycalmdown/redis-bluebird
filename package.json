@@ -9,9 +9,9 @@
     "build": "tsc"
   },
   "license": "MIT",
-  "peerDependencies": {
+  "dependencies": {
     "bluebird": "<3.0.0",
-    "redis": ""
+    "redis": "^2.6.2"
   },
   "devDependencies": {
     "@types/node": "^10.3.1",
