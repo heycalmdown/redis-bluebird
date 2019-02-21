@@ -177,7 +177,7 @@ declare namespace redis {
         lsetAsync(...args:any[]): Promise<string>
         lrange(args:any[], callback?:redis.ResCallbackT<any>): boolean;
         lrange(...args:any[]): boolean;
-        lrangeAsync(...args:any[]): Promise<string>
+        lrangeAsync(...args:any[]): Promise<string[]>
         ltrim(args:any[], callback?:redis.ResCallbackT<any>): boolean;
         ltrim(...args:any[]): boolean;
         ltrimAsync(...args:any[]): Promise<string>
@@ -576,7 +576,7 @@ declare namespace redis {
         blpopAsync(...args:any[]): Promise<string>
         llen(args:any[], callback?:redis.ResCallbackT<any>): Multi;
         llen(...args:any[]): Multi;
-        llenAsync(...args:any[]): Promise<string>
+        llenAsync(...args:any[]): Promise<number>
         lindex(args:any[], callback?:redis.ResCallbackT<any>): Multi;
         lindex(...args:any[]): Multi;
         lindexAsync(...args:any[]): Promise<string>
